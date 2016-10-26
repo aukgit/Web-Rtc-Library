@@ -1,0 +1,220 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* PubNub Logo */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+#pubnub-logo {
+    position: absolute;
+    text-align: center;
+    top: -120px;
+    width: 100%;
+}
+
+#pubnub-logo-img {
+    background: url(../img/pubnub.png);
+    background-repeat: no-repeat;
+    background-size: 128px 28px;
+    display: inline-block;
+    height: 28px;
+    opacity: 0.7;
+    width: 128px;
+}
+
+#pubnub-relative,
+.pubnub-relative { position: relative; }
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* PubNub Chat */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+#pubnub-chat-section { margin: 0px; }
+
+#pubnub-chat-input {
+    border: 0px;
+    border-bottom: 2px solid #eee;
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0px 0px 20px 0px;
+    outline: 0;
+    width: 100%;
+}
+
+/* chat box output */
+
+#pubnub-chat-output {
+    -webkit-box-shadow: none;
+    border-color: inherit;
+    box-shadow: none;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 200;
+    height: 200px;
+    margin: 20px 0px 20px 0px;
+    outline: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+#pubnub-chat-output div {
+    border-bottom: 1px solid #f8f8f8;
+    margin: 8px 10px;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* Phone Number Display */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+#my-number-section { margin: 10px 0px 40px 0px; }
+
+#my-number-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#my-number {
+    font-size: 110px;
+    font-weight: 100;
+    line-height: 180px;
+}
+
+#my-number-permalink {
+    background-color: #e6e4e4;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 8px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+#my-number-permalink,
+#my-number-permalink a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+}
+
+#my-number-permalink a {
+    color: #428bca;
+    text-shadow: 0px 0px 1px rgba(255, 255, 0, 0.9);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* Video Display */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+#video-border {
+    margin: 20px 0px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#video-display {
+    color: #eee;
+    font-size: 150px;
+    height: 340px;
+    line-height: 340px;
+    text-align: center;
+}
+
+#video-self {
+    font-size: 0px;
+    height: 340px;
+    left: 0px;
+    line-height: 0px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+}
+
+#video-display video,
+#video-self img {
+    border-radius: 6px;
+    height: 300px;
+}
+
+#video-thumbnail {
+    position: absolute;
+    right: -170px;
+    top: -160px;
+}
+
+#video-thumbnail img {
+    border: 2px solid #797979;
+    border-radius: 4px;
+    height: 90px;
+    margin-left: 3px;
+    width: 120px;
+}
+
+.dial-buttons .btn { width: 30%; }
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* Small Screens */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+@media (max-width: 768px) {
+    #video-border {
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+
+    #my-number-section { margin: 10px 0px; }
+
+    #my-number {
+        font-size: 32px;
+        font-weight: normal;
+        line-height: 44px;
+    }
+
+    #my-number::before {
+        color: #878787;
+        content: "Your number is: ";
+        font-weight: 100;
+    }
+
+    #pubnub-chat-input { margin: 0 0 8px 0; }
+
+    #pubnub-chat-output {
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        max-height: 200px;
+    }
+
+    #pubnub-chat-output div {
+        border-bottom: none;
+        font-weight: 200;
+        margin: 2px;
+    }
+
+    #video-display {
+        height: 240px;
+        line-height: 240px;
+    }
+
+    #video-self { height: 240px; }
+
+    #pubnub-logo {
+        top: -50px;
+        width: 100%;
+    }
+
+    .col-xs-7, .col-xs-5 { padding-right: 0; }
+
+    #video-thumbnail {
+        right: 5px;
+        top: -105px;
+    }
+}
