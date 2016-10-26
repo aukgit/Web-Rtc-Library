@@ -13,7 +13,7 @@ var sounds = (function() {
 
     function reset(audio) {
         try {
-            audio.currentTime = 0.0
+            audio.currentTime = 0.0;
         } catch (e) {
         }
     }

@@ -259,6 +259,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\CustomJS-for-WebRTC.js" />
+    <Content Include="Scripts\pubnub-dev.js" />
     <Content Include="Scripts\sound.js" />
     <Content Include="Scripts\webrtc.js" />
     <Content Include="Views\Home\Chat.cshtml">
